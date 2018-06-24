@@ -6,19 +6,24 @@
   margin: 0 2% 0 2%;
 }
 
-.div-heading {
+.calc-heading {
   font-size: x-large;
   margin-top: 1%;
 }
 
-.select-shape {
+.calc {
   border-style: solid;
   border-radius: 10px;
   border-width: 1px;
 }
 
-.shape-options {
+.calc-options {
   padding: 2% 0 2% 2%;
+  height: 35%;
+}
+
+.calc-hide {
+  display: none;
 }
 
 .btn-next-step {
@@ -40,6 +45,10 @@
 
 .page-intro > * {
   vertical-align: middle;
+}
+
+.calc-buttons {
+  padding: 2%;
 }
 
 .vertical-banner {

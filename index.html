@@ -19,17 +19,30 @@
         <p>A small river named Duden flows by their place and supplies it with the necessary regelia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 select-shape">
-        <p class="div-heading text-center">Step 1 : Select your shape</p>
-        <p>Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
-        <p class="shape-options">
-          <input type="radio" value="0" name="shapes" checked>Rectangle</input><br>
-          <input type="radio" value="1" name="shapes">Circle</input><br>
-          <input type="radio" value="2" name="shapes">Square</input><br>
-          <input type="radio" value="3" name="shapes">Ellipse</input>
+      <div id="calc-step-1" class="col-lg-4 col-md-4 col-sm-4 calc">
+        <p class="calc-heading text-center">Step 1 : Select your shape</p>
+        <p class="calc-desc">Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
+        <p class="calc-options">
         </p>
-        <p style="padding: 2%;">
-          <button class="btn-next-step">Go to step 2</button> or <a>Cancel</a>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Go to step 2</button> or <a href="javascript:void(0);">Cancel</a>
+        </p>
+      </div>
+      <div id="calc-step-2" class="col-lg-4 col-md-4 col-sm-4 calc calc-hide">
+        <p class="calc-heading text-center">Step 2 : Insert your values</p>
+        <p class="calc-desc">You have selected a {}, please input the required variables.</p>
+        <p class="calc-options">
+        </p>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Go to step 3</button> or <a>Cancel</a>
+        </p>
+      </div>
+      <div id="calc-step-3" class="col-lg-4 col-md-4 col-sm-4 calc calc-hide">
+        <p class="calc-heading text-center">Step 3 : Your results</p>
+        <p class="calc-desc">You have calculated the area of a {}. Below is your result</p>
+        <p class="calc-options text-center"></p>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Start Over</button>
         </p>
       </div>
       <div class="col-lg-2 col-md-2 col-sm-2 text-center vertical-banner"><p>120 x 240 Ad<br>(Vertical Banner)</p></div>
