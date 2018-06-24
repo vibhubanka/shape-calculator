@@ -20,6 +20,8 @@
 .calc-options {
   padding: 2% 0 2% 2%;
   height: 35%;
+  margin: auto;
+  vertical-align: middle;
 }
 
 .calc-hide {

@@ -8,13 +8,18 @@ $(document).ready(function(){
     var currentStepSelector = 'div#calc-step-1.calc';
     var nextStepSelector = 'div#calc-step-2.calc';
     var shape = $(currentStepSelector+' input[name="shapes"]:checked').val();
-    replaceInDom(nextStepSelector, shape);
     shapeObj = areaCalculator(shapes.indexOf(shape.toLowerCase()));
     var domElements = [];
     shapeObj.paramInfo.forEach(function(p,index){
       var textInput = inputElement_2("text");
-      domElements.push( initCaps(p)+"&nbsp;"+textInput("param"+(index+1),"","units") );
+      domElements.push(
+        getDivWithClass(
+          getDivWithClass(
+            initCaps(p)+':','col-xs-4 vertical-middle')+textInput("param"+(index+1),"","units")
+        ,'row')
+      );
     });
+    replaceInDom(nextStepSelector, shape);
     insertHtmlIntoDivChild(nextStepSelector, ".calc-options", domElements);
     showOnly(nextStepSelector);
   });
@@ -64,7 +69,7 @@ function Shape(paramInfo,shapeId) {
   this.desc=function(params){
     var s=shapes[shapeId]+" with a ";
     paramInfo.forEach(function(element,index){
-      paramInfo[index]=paramInfo[index].concat(" "+params[index]);
+      paramInfo[index]=paramInfo[index].concat(" of "+(params[index]?params[index]:"0")+" units");
     });
     s=s.concat(concatArray(paramInfo));
     return s;
@@ -140,8 +145,12 @@ function inputElement(type,checked=false){
 
 function inputElement_2(type){
   return function(name,value,placeholder=""){
-    return '<input type="'+type+'" value="'+value+'" name="'+name+'"'+(placeholder==''?'':'placeholder="'+placeholder+'"')+'>';
+    return '<input class="col-xs-1" type="'+type+'" value="'+value+'" name="'+name+'"'+(placeholder==''?'':'placeholder="'+placeholder+'"')+' required>';
   };
+}
+
+function getDivWithClass(txtValue,className){
+  return '<div class="'+className+'">'+txtValue+'</div>';
 }
 
 function replaceInDom(selector,shapeName){
@@ -164,7 +173,7 @@ function surroundSpan(str) {
 }
 
 function areaResultElement(area){
-  return '<h3>The Area is '+area+'.</h3>';
+  return '<h4>The Area is '+area+'.</h4>';
 }
 
 function insertHtmlIntoDivChild(selector,childClass,html) {
