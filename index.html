@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>Shape Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="page-intro">
+    <h2 class="page-intro-text">Shape Calculator</h2>
+    <img class="page-intro-img" src="images/header_bg.gif" />
+  </div>
+  <div class="container">
+    <div class="row content">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <p class="div-heading">Welcome to Shape Calculator</p>
+        <p><strong>Shape Calculator is an interactive web application. To the right you will find the 3 step application. Follow the instructions in each step. Clicking cancel will take you back to step 1. Enjoy!</strong></p>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
+      </div>
+      <div id="calc-step-1" class="col-lg-4 col-md-4 col-sm-4 calc">
+        <p class="calc-heading text-center">Step 1 : Select your shape</p>
+        <p class="calc-desc">Please select the shape that you would like to calculate the area of and press the button "Go to step 2"</p>
+        <p class="calc-options">
+        </p>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Go to step 2</button> or <a href="javascript:void(0);">Cancel</a>
+        </p>
+      </div>
+      <div id="calc-step-2" class="col-lg-4 col-md-4 col-sm-4 calc calc-hide">
+        <p class="calc-heading text-center">Step 2 : Insert your values</p>
+        <p class="calc-desc">You have selected a {}, please input the required variables.</p>
+        <p class="calc-options">
+        </p>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Go to step 3</button> or <a>Cancel</a>
+        </p>
+      </div>
+      <div id="calc-step-3" class="col-lg-4 col-md-4 col-sm-4 calc calc-hide">
+        <p class="calc-heading text-center">Step 3 : Your results</p>
+        <p class="calc-desc">You have calculated the area of a {}. Below is your result:</p>
+        <p class="calc-options text-center container-fluid row"></p>
+        <p class="calc-buttons">
+          <button class="btn-next-step">Start Over</button>
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 text-center vertical-banner"><p>120 x 240 Ad<br>(Vertical Banner)</p></div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>

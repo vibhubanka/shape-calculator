@@ -1,0 +1,68 @@
+.content {
+  display: inline-flex;
+}
+
+.content > div {
+  margin: 0 2% 0 2%;
+}
+
+.calc-heading {
+  font-size: x-large;
+  margin-top: 1%;
+}
+
+.calc {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.calc-options {
+  padding: 2% 0 2% 2%;
+  height: 35%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.calc-hide {
+  display: none;
+}
+
+.btn-next-step {
+  border-radius: 5px;
+}
+
+.page-intro {
+  margin: 2% 3% 4% 3%;
+}
+
+.page-intro-img {
+  width: 100%;
+}
+
+.page-intro-text {
+  position: absolute;
+  margin-left: 2%;
+}
+
+.page-intro > * {
+  vertical-align: middle;
+}
+
+.calc-buttons {
+  padding: 2%;
+}
+
+.vertical-banner {
+  width: 120px;
+  height: 240px;
+  background-color: rgba(128,128,128,0.44);
+  color: rgba(255, 255, 255, 1);
+  align-self: center;
+  display: table;
+}
+
+.vertical-banner > * {
+  vertical-align: middle;
+  display: table-cell;
+}
